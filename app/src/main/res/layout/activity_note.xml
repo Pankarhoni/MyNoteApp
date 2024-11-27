@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEDEBD"
+    tools:context=".NoteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarnote"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/black"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9EB384"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/createnotefab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="#435334"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview"
+
+        app:layout_constraintEnd_toEndOf="@+id/recyclerview"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="@+id/recyclerview"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview"
+        app:layout_constraintVertical_bias="0.961"
+        app:maxImageSize="50dp"
+        app:tint="@null"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:visibility="visible"
+        android:layout_below="@+id/toolbarnote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="31dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/empty_imageview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:alpha="0.2"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notask" />
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_imageview"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/fresca"
+        android:textColor="@color/black"
+        android:text="Empty List!"
+        android:textSize="25sp"
+        android:alpha="0.4"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_imageview" />
+
+
+
+</RelativeLayout>

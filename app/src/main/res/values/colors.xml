@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray" >#cdc9c3</color>
+    <color name="green" >#9EB384</color>
+    <color name="lightgreen" >#cfffa5</color>
+    <color name="yell" >#F5F0BB</color>
+    <color name="mud" >#5C8374</color>
+    <color name="swamp" >#93B1A6</color>
+    <color name="tint" >#F3FDE8</color>
+    <color name="color3" >#ccf6c8</color>
+    <color name="color4" >#ffe0ac</color>
+    <color name="color5" >#e5cfe5</color>
+</resources>
