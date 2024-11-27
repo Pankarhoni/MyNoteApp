@@ -7,6 +7,7 @@ and Firebase handles authentication and real-time data storage.
 <ins>Technologies Used:</ins>
 Android Studio (Java): For building the app’s front-end and managing the user interface.
 Firebase: Cloud-based backend for secure email authentication and scalable data storage.
+
 <ins>Features:</ins>
 User Authentication: Users can register and log in using their email and password for secure access.(user must verify their email)
 Note Management: Easily create, edit, and manage notes to keep your tasks and thoughts organized.
